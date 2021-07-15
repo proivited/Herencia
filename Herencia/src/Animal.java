@@ -1,15 +1,19 @@
 
-public class Animal {
+public abstract class Animal {
 	
 	int edad;
 	String nombre;
 	
-	public String comer() {
-		return "comiendo";
+	public Animal(String nombre, int edad){
+		this.nombre = nombre;
+		this.edad = edad;
+		
 	}
 	
+	public abstract String comer();
+	
 	public String dormir() {
-		return "durmiendo";
+		return "zzzzz";
 	}
 
 }
